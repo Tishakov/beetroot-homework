@@ -12,16 +12,59 @@
 
     <a href="..">Вернуться назад</a>
 
-    <h1>Список покупок</h1>
-    <ul>
+    <h1>Онлайн заказ продуктов</h1>
 
-        <li><input type="checkbox" name="bread" id="1"><label for="1"> Хлеб</label></li>
-        <li><input type="checkbox" name="bread" id="2"><label for="2"> Масло сливочное</label></li>
-        <li><input type="checkbox" name="bread" id="3"><label for="3"> Картошка 1 кг.</label></li>
-        <li><input type="checkbox" name="bread" id="4"><label for="4"> Капуста 1 шт.</label></li>
-        <li><input type="checkbox" name="bread" id="5"><label for="5"> Кофе</label></li>
-        <li><input type="checkbox" name="bread" id="6"><label for="6"> Чай</label></li>
+    <p>Выберите нужные продукты:</p>
+    <ul>
+        <li>1<input type="range" min="0" max="10" value="0"
+                onchange="getElementById('w1').innerHTML=this.value;">10<input type="checkbox" name="bread"
+                id="1"><label for="1">Хлеб - <span id="w1">0</span> шт.</label></li>
+
+        <li>1<input type="range" min="0" max="10" value="0"
+                onchange="getElementById('w2').innerHTML=this.value;">10<input type="checkbox" name="bread"
+                id="2"><label for="2">Масло сливочное - <span id="w2">0</span> шт.</label></li>
+
+        <li>1<input type="range" min="0" max="10" value="0"
+                onchange="getElementById('w3').innerHTML=this.value;">10<input type="checkbox" name="bread"
+                id="3"><label for="3">Сыр - <span id="w3">0</span> шт.</label></li>
+
+        <li>1<input type="range" min="0" max="10" value="0"
+                onchange="getElementById('w4').innerHTML=this.value;">10<input type="checkbox" name="bread"
+                id="4"><label for="4">Молоко - <span id="w4">0</span> шт.</label></li>
+
+        <li>1<input type="range" min="0" max="10" value="0"
+                onchange="getElementById('w5').innerHTML=this.value;">10<input type="checkbox" name="bread"
+                id="5"><label for="5">Макароны - <span id="w5">0</span> шт.</label></li>
+
+        <li>1<input type="range" min="0" max="10" value="0"
+                onchange="getElementById('w6').innerHTML=this.value;">10<input type="checkbox" name="bread"
+                id="6"><label for="6">Шоколадка - <span id="w6">0</span> шт.</label></li>
     </ul>
+
+    <br>
+
+    <form action="">
+
+        <legend>Заполните форму ниже:</legend>
+
+        <input type="text" name="registration_login" id="name" placeholder="Введите ваше имя">
+        <br>
+        <input type="email" name="registration_email" id="email" placeholder="Введите ваш email">
+        <br>
+        <input type="text" name="registration_password" id="password" placeholder="Введите ваш телефон">
+        <br>
+        <br>
+
+        <label for="birth">Выберите дату доставки:</label> <br>
+        <input type="date" name="dataBirth" id="birth">
+        <br>
+        <br>
+        <label for="about">Введите адрес доставки:</label> <br>
+        <textarea name="aboutMessage" id="about"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Заказать">
+    </form>
 
 </body>
 
