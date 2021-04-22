@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.banner {
+    width: 100%;
+}
+
+p {
+    margin: 20px 0 20px 0;
+    font-size: 18px;
+}
+
+.cars_galery {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.cars_galery img {
+    border: 4px dashed black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.link_1 {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.link_2 {
+    text-decoration: none;
+}
